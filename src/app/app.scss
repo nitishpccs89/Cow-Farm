@@ -14,3 +14,112 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+@font-face {
+    font-family: 'metropolisregular';
+    src: url('../assets/fonts/metropolis-regular-webfont.woff2') format('woff2'),
+         url('../assets/fonts/metropolis-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'metropolisbold';
+    src: url('../assets/fonts/metropolis-bold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/metropolis-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+button span.button-inner p.active {
+    color: #FC6011;
+    font-weight: 500;
+}
+p.menu-open:active {
+    color: #FC6011;
+}
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+/*
+@font-face {
+    font-family: 'metropolismedium';
+    src: url('metropolis-medium-webfont.woff2') format('woff2'),
+         url('metropolis-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'metropolismedium';
+    src: url('metropolis-medium-webfont.woff2') format('woff2'),
+         url('metropolis-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'metropolislight';
+    src: url('metropolis-light-webfont.woff2') format('woff2'),
+         url('metropolis-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+
+.toolbar-content{
+    font-family: 'metropolisregular';
+}
+.toolbar-title {
+    font-weight: 400 !important;
+    color: #4A4B4D !important;
+    font-size: 18pt;
+}
+h4{color:#4A4B4D !important;}
+
+page-add-remove-card.ion-page.show-page{
+    background: url(../assets/imgs/pp.png) !important;
+    background-position: top;
+}
+page-thank-you.ion-page.show-page{
+    background: url(../assets/imgs/send-checkout.png) !important;
+    background-position: top;
+}
+
+.m-auto{margin: auto;}
+.searchbar-md .searchbar-input {border-radius: 50px; box-shadow:none; background-color: #F2F2F2; margin: 1rem 0;}
+.searchbar-md .searchbar-search-icon {
+    top: 21px;
+}

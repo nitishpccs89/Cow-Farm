@@ -1,0 +1,92 @@
+<!--
+  Generated template for the OrderListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Order List</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+  <ion-grid padding class="my-orderlist">
+    <ion-list class="order-block" *ngFor="let d of orderList">
+      <ion-row>
+        <ion-col col-5><span>Order ID :</span></ion-col>
+        <ion-col col-7><span>{{d.orderid}}</span></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-5><span>Transaction Id :</span></ion-col>
+        <ion-col col-7><span>{{d.transiotion_id}}</span></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-5><span>Order Date :</span></ion-col>
+        <ion-col col-7><span>{{d.order_date}}</span></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-5><span>Amount : </span></ion-col>
+        <ion-col col-7><span>RS {{d.order_amount}}</span></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-3><span>Status :</span></ion-col>
+        <ion-col col-3><span>{{d.order_status}}</span></ion-col>
+        <ion-col col-3><p class="order-status">Track Order</p></ion-col>
+        <ion-col col-3><p class="order-status" (click)="gotoOrderDetails(d.transiotion_id)">View</p></ion-col>
+      </ion-row>
+    </ion-list>
+    <!-- ion-list -->
+   
+    <!-- ion-list -->
+   </ion-grid>
+  
+  
+</ion-content>
+<ion-footer>
+  <ion-grid class="add-btn" no-padding>
+    <ion-row>
+      <ion-col col>
+        <div class="addbtn-bg">
+        <button class="home-btn" ion-button clear small text-center (click)="gotoProductSection()">
+          <img src="assets/imgs/home.svg" alt="Home"/>
+        </button>
+        </div>
+      </ion-col>
+      
+    </ion-row>
+  </ion-grid>
+    <ion-grid>
+    <ion-row>
+      <ion-col col-3>
+        <div class="footer-menu">
+          <button ion-button ion-button menuToggle clear small text-center>
+            <p class="menu-open"><span class="material-icons">menu_open</span>Menu</p>
+          </button>
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <div class="footer-menu" text-left>
+          <button ion-button clear small text-center (click)="gotoCheckOutpage()">
+            <p style="color:rgb(48, 85, 206)">{{session?.getAddCatArr()?.length}}</p>
+            <p><span class="material-icons">shopping_cart</span>Cart</p>
+          </button>
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <div class="footer-menu" text-right>
+          <button ion-button clear small text-center (click)="gotoProfilepage()">
+            <p><span class="material-icons">person</span>Profile</p>
+          </button>
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <div class="footer-menu" text-right>
+          <button ion-button clear small text-center (click)="gotoMoremenupage()">
+            <p><span class="material-icons">format_indent_increase</span>More</p>
+          </button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

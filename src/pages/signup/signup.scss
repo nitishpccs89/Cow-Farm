@@ -1,0 +1,79 @@
+page-signup {
+    .signup img.logo {
+        padding: 5rem 5rem 0rem 5rem;
+    }
+    .signup h2.title {
+        font-size: 2.4em;
+        color: #4A4B4D;
+        font-weight: 400;
+        padding-top: 4rem;
+    }
+    .signup p.tag_line{
+        color: #7C7D7E;
+    }
+    ion-item.item.item-block {
+        margin-bottom: 3rem;
+    }
+    ion-list.login-form .item-block .item-inner {
+        border: 0px solid #dedede;
+        border-radius: 52px;
+        height: 60px;
+        background: #F2F2F2;
+    }
+    ion-item.email {
+        background: transparent;
+    }
+    .list-md > .item-block:last-child ion-label, .list-md > .item-block:last-child .item-inner, .list-md > .item-wrapper:last-child ion-label, .list-md > .item-wrapper:last-child .item-inner {
+        border-bottom: 1px solid #dedede;
+    }
+    .field_input{
+        color: #B6B7B7;
+        font-size: 14px;
+        padding-left: 2rem;
+        font-weight: normal;
+    } 
+    .list-md .item-input:last-child {
+        border-bottom: 0px solid #dedede;
+    }
+    .list-md .item-input.input-has-focus:last-child, .list-md .item-input.input-has-focus:last-child{ 
+        border-bottom-color: transparent!important;
+        box-shadow: none!important;
+    }
+    button.login_btn{
+        background-color: #ffdf59;
+        color: #fff;
+        font-weight: 200;
+        font-size: 1.2em;
+        height: 60px;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        text-transform: none;
+    }
+    ion-row.account_block span {
+        color: #FC6011;
+    }
+    ion-row.account_block{
+        padding-top: 1rem;
+        padding-bottom: 0%;
+    }
+    ion-row .logo_block{
+        padding-bottom: 0%;
+    }
+    p.tag_line.ion-no-margin {
+        margin-bottom: 0;
+    }
+    .select-md .select-icon .select-icon-inner {
+        left: -10px;
+        top: 50%;
+        margin-top: 0px;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 7px solid;
+        border-right: 6px solid transparent;
+        border-left: 6px solid transparent;
+        color: #FC6011;
+        pointer-events: none;
+    }
+
+}

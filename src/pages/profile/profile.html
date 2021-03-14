@@ -1,0 +1,114 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="signup">
+  <ion-grid>
+    <ion-row text-center>
+      <ion-col col-12 logo_block>
+        <img class="logo" [src]=" savedImage"  alt="Profile">
+        <p class="edit_profile" text-center no-margin><a (click)="presentActionSheet()"><ion-icon name="create" slot="start"></ion-icon> Edit Profile</a></p>
+        <h2 class="title" text-center no-margin>{{this.profileForm.value.fullname}}</h2>
+        <p class="tag_line" text-center>
+          <a (click)="logoutFun()">Sign Out <ion-icon name="log-out"></ion-icon></a>
+        </p>
+        <p class="tag_line" text-center>
+          <a (click)="showPasswordRest()">Reset Password <ion-icon name="refresh"></ion-icon></a>
+        </p>
+        
+      </ion-col>
+    </ion-row>
+  <form action="" #profileForm="ngForm">
+    <ion-list class="login-form">
+      <ion-item class="input_block">
+        <ion-label stacked>Username</ion-label>
+        <ion-input type="text" name="fullname"  ngModel required></ion-input>
+      </ion-item>
+      <ion-item class="input_block">
+        <ion-label stacked>Email</ion-label>
+        <ion-input type="text" name="email" ngModel required></ion-input>
+      </ion-item>
+      <ion-item class="input_block">
+        <ion-label stacked>Mobile No</ion-label>
+        <ion-input type="number" name="phone" ngModel required></ion-input>
+      </ion-item>
+      <ion-item  class="input_block">
+        <ion-label class="field_input">Select City</ion-label>
+        <ion-select name="cityid"  id="cityid" ngModel required>
+        <ion-option *ngFor="let cl of cityList" [value]="cl.id" >{{cl.cityname}}</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item class="input_block">
+        <ion-label stacked>Address</ion-label>
+        <ion-input type="textarea" rows="3" name="address" ngModel required></ion-input>
+      </ion-item>
+      
+   
+      <!-- <ion-item class="input_block">
+        <ion-label stacked>Delivery Charge</ion-label>
+        <ion-input type="text" name="deliverycharge"  ngModel required></ion-input>
+      </ion-item> -->
+      <!-- <ion-item class="input_block">
+        <ion-label stacked>Confirm Password</ion-label>
+        <ion-input type="text" value="**************"></ion-input>
+      </ion-item> -->
+    </ion-list>
+      <button class="login_btn" ion-button color="light" round full (click)="updateProfile()">Save</button>
+  </form>
+ </ion-grid>
+</ion-content>
+<ion-footer>
+  <ion-grid class="add-btn" no-padding>
+    <ion-row>
+      <ion-col col>
+        <div class="addbtn-bg">
+        <button class="home-btn" ion-button clear small text-center (click)="gotoProductSection()">
+          <img src="assets/imgs/home.svg" alt="Home"/>
+        </button>
+        </div>
+      </ion-col>
+      
+    </ion-row>
+  </ion-grid>
+    <ion-grid>
+    <ion-row>
+      <ion-col col-3>
+        <div class="footer-menu">
+          <button ion-button ion-button menuToggle clear small text-center>
+            <p class="menu-open"><span class="material-icons">menu_open</span>Menu</p>
+          </button>
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <div class="footer-menu" text-left>
+          <button ion-button clear small text-center (click)="gotoCheckOutpage()">
+            <p style="color:rgb(48, 85, 206)">{{session?.getAddCatArr()?.length}}</p>
+            <p><span class="material-icons">shopping_cart</span>Cart</p>
+          </button>
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <div class="footer-menu" text-right>
+          <button ion-button clear small text-center>
+            <p class="active"><span class="material-icons">person</span>Profile</p>
+          </button>
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <div class="footer-menu" text-right (click)="gotoMoremenupage()">
+          <button ion-button clear small text-center>
+            <p><span class="material-icons">format_indent_increase</span>More</p>
+          </button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

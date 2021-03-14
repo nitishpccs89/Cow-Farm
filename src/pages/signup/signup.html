@@ -1,0 +1,58 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>login</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content padding class="signup">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 logo_block>
+        <!-- <img class="logo" src="assets/imgs/logo.png" alt="BeforeLogin"> -->
+        <h2 class="title" text-center>Sign Up</h2>
+        <p class="tag_line" text-center>Add your details to sign up</p>
+      </ion-col>
+    </ion-row>
+  <form action="" #registrationForm="ngForm">
+    <ion-list class="login-form">
+      <ion-item no-padding>
+        <ion-label class="field_input">Select User Type</ion-label>
+        <ion-select name="usertype" ngModel required>
+          <ion-option value="1">Customer</ion-option>
+          <ion-option value="2">Distributor</ion-option>
+    
+        </ion-select>
+      </ion-item>
+      <ion-item no-padding class="fullName">
+        <ion-input type="text" name="fullname" ngModel placeholder="Full Name" class="field_input" required></ion-input>
+      </ion-item>
+      <ion-item no-padding class="email">
+        <ion-input type="email" name="email" ngModel placeholder="Email" class="field_input"  pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+        required></ion-input>
+      </ion-item>
+      <ion-item no-padding>
+        <ion-input type="number" name="mobile" ngModel placeholder="Mobile No" class="field_input" required></ion-input>
+      </ion-item>
+      <ion-item no-padding>
+        <ion-input type="password" name="password" ngModel placeholder="Password" class="field_input" required></ion-input>
+      </ion-item>
+      <ion-item no-padding>
+        <ion-input type="password" name="passConfirm" ngModel placeholder="Confirm Password" class="field_input" required></ion-input>
+      </ion-item>
+    </ion-list>
+      <button class="login_btn" ion-button color="light" round full (click)="registerUserApi()">Sign Up</button>
+  </form>
+  <ion-row class="account_block">
+    <ion-col col-12 class="logo_block">
+      <p class="tag_line" text-center (click)="goToLoginpage()">Already have an Account? <span><b>Login</b></span></p>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>
+

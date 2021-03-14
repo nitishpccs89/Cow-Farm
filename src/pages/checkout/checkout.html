@@ -1,0 +1,108 @@
+<!--
+  Generated template for the CheckoutPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>CheckOut</ion-title>
+    <ion-buttons end>
+      <button (click)="paymentDo()" ion-button icon-only>
+        <ion-icon name="md-card"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <div *ngIf="checkOut.length==0" style="margin-left: 32%;margin-top: 50%;">
+  <a style="font-size: 18px;">Nothing add in cart!!</a>
+  </div>
+  
+  <ion-row *ngIf="checkOut.length>0">
+    <ion-col>
+      <ion-card>
+        <ion-list class="cart-conten" *ngFor="let co of checkOut">
+            <img class="cart-img" src="{{co.image}}" alt="Prduct" />
+            <ion-row text-center>
+              <ion-col col-12>
+              <p class="shop" padding>{{co.product_name}}</p>
+              <p>Total $ {{ (co?.orderProduct * co?.sell_price) | number : '1.2-2' }}</p>
+            </ion-col>
+              <ion-col col-4 text-right no-padding>
+                <button ion-button clear small color="warning" icon-start class="custom-btn" (click)="reducePc(co?.postid,co?.orderProduct)">
+                  <ion-icon name="remove-circle"></ion-icon>
+                </button>
+              </ion-col>
+              <ion-col col-4 text-center no-pdding>
+                <button no-padding ion-button clear small color="warning" icon-start class="custom-btn" >
+                  {{co?.orderProduct}}
+                </button>
+              </ion-col>
+              <ion-col col-4 text-start no-padding>
+                <button ion-button clear small color="warning" icon-end class="custom-btn" (click)="addPc(co?.postid,co?.orderProduct)">
+                  <ion-icon name="add-circle"></ion-icon>
+                </button>
+              </ion-col>
+            <ion-col col text-end>
+                <button ion-button clear small no-padding color="warning" icon-start class="delete-btn" (click)="deleteData();">
+                  <img src="assets/imgs/trash.png" alt="trash">
+                </button>
+              </ion-col>
+            </ion-row>
+        </ion-list>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <!-- Ion-Row End -->
+  
+  
+</ion-content>
+<ion-footer>
+  <ion-grid class="add-btn" no-padding>
+    <ion-row>
+      <ion-col col>
+        <div class="addbtn-bg">
+        <button class="home-btn" ion-button clear small text-center (click)="gotoProductSection()">
+          <img src="assets/imgs/home.svg" alt="Home"/>
+        </button>
+        </div>
+      </ion-col>
+      
+    </ion-row>
+  </ion-grid>
+    <ion-grid>
+    <ion-row>
+      <ion-col col-3>
+        <div class="footer-menu">
+          <button ion-button ion-button menuToggle clear small text-center>
+            <p class="menu-open"><span class="material-icons">menu_open</span>Menu</p>
+          </button>
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <div class="footer-menu" text-left>
+          <button ion-button clear small text-center>
+            <p class="active"><span class="material-icons">shopping_cart</span>Cart</p>
+          </button>
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <div class="footer-menu" text-right>
+          <button ion-button clear small text-center (click)="gotoProfiepage()">
+            <p><span class="material-icons">person</span>Profile</p>
+          </button>
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <div class="footer-menu" text-right>
+          <button ion-button clear small text-center (click)="gotoMoremenupage()">
+            <p><span class="material-icons">format_indent_increase</span>More</p>
+          </button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

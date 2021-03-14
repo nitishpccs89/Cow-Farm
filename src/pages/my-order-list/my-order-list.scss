@@ -1,0 +1,98 @@
+page-my-order-list {
+    .toolbar-background {
+        border-color: #eaca44;
+        background: #eaca44;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .toolbar-title {
+        color: #fff!important;
+        font-weight: 400!important;
+    }
+    ion-icon.back-button-icon {
+        color: #fff;
+    }   
+    .my-orderlist span{
+        text-transform:capitalize;
+        line-height: 1.2;
+    }
+    .my-orderlist ion-list ion-row ion-col:first-child span{ 
+        font-weight: 500;
+        font-size: 10pt;
+    }
+    .my-orderlist ion-list ion-row ion-col:last-child span{ 
+        color: #706C6C;
+    }
+    .my-orderlist ion-list ion-row ion-col:nth-of-type(2) span{ 
+        color: #706C6C;
+    }
+    .order-block{
+        border: 1px solid #e8e8e8;
+        margin-bottom: 1rem;
+        border-radius: 7px;
+        padding: 1rem;
+    }
+    ion-grid.my-orderlist{
+        margin-bottom: 3rem;
+    }
+    p.order-status {
+        background: #eaca44;
+        color: #fff! important;
+        padding: 0.2rem 0 0.2rem 0;
+        font-weight: 100;
+        text-align: center;
+        margin: 0;
+
+    }
+    // footer css
+    .footer-menu p{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        line-height: 1.5;
+        }
+        .footer-menu button {
+            color: #b6b7b7;
+            font-weight: normal;
+            font-size: 1rem;
+            padding: 2rem 0 4rem;
+            text-transform: capitalize;
+        }
+        .footer-menu p ion-icon {
+            font-size: 2.2rem;
+        }
+        ion-footer.footer {
+            background: #fff;
+        }
+        
+        ion-grid.add-btn.grid {
+            z-index: 9999;
+            padding: 0;
+        }
+        .addbtn-bg {
+            background-image: url(../assets/imgs/footer-bgcheckout.png);
+            height: 100px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            width: 100%;
+            top: -40px;
+            left: 0px;
+            text-align: center;
+        }
+        button.home-btn {
+            height: 58px;
+            margin: 0px;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            position: relative;
+            top: 1.7rem;
+        }
+        .footer-menu button img {
+            width: max-content;
+            margin: 0 auto;
+        }
+
+}

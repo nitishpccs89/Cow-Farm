@@ -1,0 +1,160 @@
+<!--
+  Generated template for the CheckoutPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Order Details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+  <ion-grid padding class="my-orderlist">
+    <ion-list class="order-block">
+      <ion-row>
+        <ion-col col-5><span>Order ID :</span></ion-col>
+        <ion-col col-7><span>{{orderdetails?.orderid}}</span></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-5><span>transaction ID :</span></ion-col>
+        <ion-col col-7><span>{{orderdetails?.transiotion_id}}</span></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-5><span>Order Date :</span></ion-col>
+        <ion-col col-7><span>{{orderdetails?.order_date}}</span></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-5><span>Total Amount :</span></ion-col>
+        <ion-col col-7><span>RS {{orderdetails?.final_amount}}</span></ion-col>
+      </ion-row>
+    </ion-list>
+    <!-- ion-list -->
+    <ion-row>
+      <ion-col col-12><p no-margin>Product Details</p></ion-col>
+    </ion-row>
+    <ion-list class="order-block" *ngFor="let orderh of productdetails">
+      <ion-row>
+        <ion-col col-5><span>Product name : </span></ion-col>
+        <ion-col col-7><span>{{orderh.product_name}}</span></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-5><span>Division : </span></ion-col>
+        <ion-col col-7><span>{{orderh.cat_name}}</span></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-5><span>Qty :</span></ion-col>
+        <ion-col col-7><span>{{orderh.product_qty}}</span></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-5><span>Amount : </span></ion-col>
+        <ion-col col-7><span>RS {{ orderh.product_price}}</span></ion-col>
+        <!-- <ion-col col-5 text-right><span>Status</span></ion-col> -->
+      </ion-row>
+      <ion-row>
+        <ion-col col-5><span>Total Amount :</span></ion-col>
+        <ion-col col-2><span>RS {{ orderh.product_final_price}}</span></ion-col>
+        <ion-col col-5><p class="order-status" (click)="gotoOrderDetails()">{{orderh.status}}</p></ion-col>
+      </ion-row>
+    </ion-list>
+    <!-- ion-list -->
+    <!-- <ion-list class="order-block">
+      <ion-row>
+        <ion-col col-5><span>Product name : </span></ion-col>
+        <ion-col col-7><span>Bread</span></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-5><span>Division : </span></ion-col>
+        <ion-col col-7><span>Division 1</span></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-5><span>Qty :</span></ion-col>
+        <ion-col col-7><span>02</span></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-5><span>Amount : </span></ion-col>
+        <ion-col col-7><span>$20</span></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-5><span>Total Amount : </span></ion-col>
+        <ion-col col-2><span>$40</span></ion-col>
+        <ion-col col-5 text-right><p class="order-status">Status</p></ion-col>
+      </ion-row>
+    </ion-list>
+   ion-list -->
+   <!--<ion-list class="order-block">
+      <ion-row>
+        <ion-col col-5><span>Product name : </span></ion-col>
+        <ion-col col-7><span>Bread</span></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-5><span>Division : </span></ion-col>
+        <ion-col col-7><span>Division 1</span></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-5><span>Qty :</span></ion-col>
+        <ion-col col-7><span>02</span></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-5><span>Amount : </span></ion-col>
+        <ion-col col-7><span>$20</span></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-5><span>Total Amount : </span></ion-col>
+        <ion-col col-2><span>$40</span></ion-col>
+        <ion-col col-5 text-right><p class="order-status">Status</p></ion-col>
+      </ion-row>
+    </ion-list> -->
+
+  </ion-grid>
+  
+  
+</ion-content>
+<ion-footer>
+  <ion-grid class="add-btn" no-padding>
+    <ion-row>
+      <ion-col col>
+        <div class="addbtn-bg">
+        <button class="home-btn" ion-button clear small text-center (click)="gotoProductSection()">
+          <img src="assets/imgs/home.svg" alt="Home"/>
+        </button>
+        </div>
+      </ion-col>
+      
+    </ion-row>
+  </ion-grid>
+    <ion-grid>
+    <ion-row>
+      <ion-col col-3>
+        <div class="footer-menu">
+          <button ion-button ion-button menuToggle clear small text-center>
+            <p class="menu-open"><span class="material-icons">menu_open</span>Menu</p>
+          </button>
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <div class="footer-menu" text-left>
+          <button ion-button clear small text-center (click)="gotoCheckOutpage()">
+            <p style="color:rgb(48, 85, 206)">{{session?.getAddCatArr()?.length}}</p>
+            <p><span class="material-icons">shopping_cart</span>Cart</p>
+          </button>
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <div class="footer-menu" text-right>
+          <button ion-button clear small text-center (click)="gotoProfiepage()">
+            <p><span class="material-icons">person</span>Profile</p>
+          </button>
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <div class="footer-menu" text-right>
+          <button ion-button clear small text-center (click)="gotoMoremenupage()">
+            <p><span class="material-icons">format_indent_increase</span>More</p>
+          </button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

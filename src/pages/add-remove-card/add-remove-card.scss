@@ -1,0 +1,70 @@
+page-add-remove-card {
+    .modal_content {
+       background: #fff;
+       overflow: scroll;
+      top: 20%;
+      left: 0;
+      width: 100%;
+      height: 80%;
+      border-radius: 20px 20px 0 0;
+    }
+    button.closebtn {
+      float: right;
+      color: #4A4B4D;
+  }
+  ion-grid.add-remove-card {
+    padding: 0 2rem;
+  }
+  ion-list.login-form .item-block .item-inner {
+    border: 0px solid #dedede;
+    margin-bottom: 0rem;
+    border-radius: 52px;
+    height: 50px;
+    background: #F2F2F2;
+}
+.field_input{
+    color: #B6B7B7;
+    font-size: 14px;
+    padding-left: 1rem;
+    font-weight: normal;
+}
+button.login_btn{
+    background-color: #EACA44;
+    color: #fff;
+    font-weight: 200;
+    font-size: 1.2em;
+    height: 50px;
+    box-shadow: none;
+    -webkit-box-shadow:none;
+    text-transform: none;
+  }
+  .add-remove-card ion-list{
+    margin-bottom:0rem;
+    }
+    .login-form ion-item{
+      background: transparent; 
+      margin-bottom: 2rem;
+      }
+  ion-list.login-form.card-validity {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .login-form .item-input:last-child {
+    border-bottom: 0px solid #dedede;
+  }
+  .list-md .item-input.input-has-focus, .list-md .item-input.input-has-focus{ 
+    border-bottom-color: transparent!important;
+    box-shadow: none!important;
+  }
+  ion-icon.add-c {
+    text-indent: -7rem;
+    font-size: 3rem;
+}
+  .login-form span.remove {
+  font-size: 10pt;
+}
+
+
+
+    
+}

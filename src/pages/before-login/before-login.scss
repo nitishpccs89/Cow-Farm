@@ -1,0 +1,45 @@
+page-before-login {
+    p.inner_title {
+        color: #7C7D7E;
+        font-size: 14px;
+        padding: 0 2rem;
+        line-height: 19px;
+        margin-top: 0;
+    }
+    button.login_btn{
+        background-color: #eaca44;
+        color: #fff;
+        font-weight: 200;
+        font-size: 1.2em;
+        padding: 2.6rem 0;
+        box-shadow: 0px 0px 11px 2px #FC601152;
+        margin-top: 2rem;
+        -webkit-box-shadow: 0px 0px 11px 2px #FC601152;
+        text-transform: none;
+    }
+    button.signup_btn{
+        background-color: #fff;
+        color: #FC6011;
+        font-weight: 200;
+        font-size: 1.2em;
+        padding: 2.6rem 0;
+        box-shadow:none;
+        margin-top: 2.5rem;
+        border: 1px solid #eaca44;
+        text-transform: none;
+    }
+    .docs-demo-device::after {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 2px;
+        bottom: 18px;
+        content: "";
+        display: none;
+        height: 4px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 35%;
+        z-index: 1;
+    }
+
+}

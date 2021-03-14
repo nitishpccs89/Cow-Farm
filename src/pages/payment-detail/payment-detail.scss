@@ -1,0 +1,139 @@
+page-payment-detail {
+    body{font-family: 'metropolisregular';}
+    .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+        
+        background-image:none!important;
+        background-repeat: repeat-x;
+        content: "";
+    }
+    .toolbar-background {
+        border-color: #b2b2b2;
+        background: #fff;
+    }
+    .toolbar-content {
+        display: flex;
+        flex-direction: row;
+    }
+    ion-icon.cart-btn {
+        font-size: 3rem;
+        color: #4A4B4D;
+    }
+    .title_block h4 {
+        font-size: 14pt;
+    }
+    .title_block hr{
+        margin-top: 2.5rem;
+    }
+    .card-details {
+        background-color: #F7F7F7;
+        padding: 3rem 3rem;
+        font-family: 'metropolisregular';
+        color: #4A4B4D;
+        box-shadow: 0px 37px 73px -58px #000;
+    }
+    .card-details ion-icon{
+        color: #FC6011;
+        font-size: 16pt;
+        vertical-align: middle;
+        font-weight: 700;
+    }
+    ion-row.card-details.row span {
+        font-size: 16pt;
+        margin-right: .5rem;
+        vertical-align: top;
+    }
+    ion-row.card-details.row span:last-child {
+        font-size: 11pt;
+        float: right;
+        margin-right: 1rem;
+    }
+    .card-number {
+        padding-top: .7rem;
+    }
+    .btn-action button span {
+        font-size: 11px !important;
+        text-transform: capitalize;
+    }
+    .btn-action button {
+        padding: 5px;
+        border: 1px solid #FC6011;
+        box-shadow: none !important;
+        border-radius: 60px;
+        color: #FC6011;
+    }
+    .b-add-card {
+        margin: 3rem 0;
+    }
+    .b-add-card button {
+        background: #EACA44;
+        box-shadow: none;
+        border-radius: 60px;
+        height: 57px;
+        font-weight: 100;
+        text-transform: capitalize;
+        font-size: 13pt;
+    }
+    .b-add-card button ion-icon {
+        font-size: 22pt;
+    }
+    
+   
+
+    
+// footer css
+.footer-menu p{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    line-height: 1.5;
+    }
+    .footer-menu button {
+        color: #b6b7b7;
+        font-weight: normal;
+        font-size: 1rem;
+        padding: 2rem 0 4rem;
+        text-transform: capitalize;
+    }
+    .footer-menu p ion-icon {
+        font-size: 2.2rem;
+    }
+    ion-footer.footer {
+        background: #fff;
+    }
+    
+    ion-grid.add-btn.grid {
+        z-index: 9999;
+        padding: 0;
+    }
+    .addbtn-bg {
+        background-image: url(../assets/imgs/footer-bgcheckout.png);
+        height: 100px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        top: -40px;
+        left: 0px;
+        text-align: center;
+    }
+    button.home-btn {
+        height: 58px;
+        margin: 0px;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        position: relative;
+        top: 1.7rem;
+    }
+    .footer-menu button img {
+        width: max-content;
+        margin: 0 auto;
+    }
+    ion-col.other-method.col button span {
+        font-size: 10pt;
+        font-weight: 600;
+    }
+
+}

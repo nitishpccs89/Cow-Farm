@@ -1,0 +1,135 @@
+page-chekout-fpayment {
+    .toolbar-background {
+        border-color: #eaca44;
+        background: #eaca44;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .toolbar-title {
+        color: #fff!important;
+    }
+    ion-icon.back-button-icon {
+        color: #fff;
+    }   
+    img.cart-img {
+        max-width: 40%;
+        min-width: 40%;
+    }
+    ion-list.cart-conten.list {
+        display: flex;
+    }
+    ion-list.cart-conten p {
+        padding: 3px 0 !important;
+        color: #000;
+        font-weight: 400;
+    }
+    button.custom-btn {
+        color: #eaca44;
+        font-weight: normal;
+        font-size: 1.2em;
+        margin-top: -1.5rem;
+        padding: 0px 1px;
+    }
+    .continue_shop button {
+        font-size: 14px;
+        font-weight: normal;
+        background: #eaca44;
+        border-radius: 0;
+        padding: 2.2rem .6rem 2.2rem 0.6rem;
+        min-width: 100%;
+        margin-top: 1.5rem;
+        box-shadow: none;
+        
+    }
+    .continue_shop {
+        margin-bottom: 3rem;
+    }
+    ion-card.card {
+        border: 1px solid #000;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .full-width{
+        width:100%;
+    }
+    .cart-bag .item{
+        border:1px solid #f3f3f3 ;
+        background:#f8f8f8;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+    }
+    .cart-bag .item-inner {
+        border-bottom: 0px !important;
+    }
+    .cart-total h5{
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+    }
+        .cart-total {
+        background-color: #f8f8f8;
+        padding: 16px;
+    }
+    ion-col.border-b {
+        border-bottom: 1px solid #b6b7b7;
+    }
+    .checkout-btn{
+        color: #fff;
+        background-color: #eaca44;
+        height: 50px;
+        margin: 1rem 0;
+    }
+    .cart-section{
+        margin-bottom: 3rem;
+    }
+    // footer css
+    
+    .footer-menu p{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        line-height: 1.5;
+        }
+        .footer-menu button {
+            color: #b6b7b7;
+            font-weight: normal;
+            font-size: 1rem;
+            padding: 2rem 0 4rem;
+            text-transform: capitalize;
+        }
+        .footer-menu p ion-icon {
+            font-size: 2.2rem;
+        }
+        ion-footer.footer {
+            background: #fff;
+        }
+        
+        ion-grid.add-btn.grid {
+            z-index: 9999;
+            padding: 0;
+        }
+        .addbtn-bg {
+            background-image: url(../assets/imgs/footer-bgcheckout.png);
+            height: 100px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            width: 100%;
+            top: -40px;
+            left: 0px;
+            text-align: center;
+        }
+        button.home-btn {
+            height: 58px;
+            margin: 0px;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            position: relative;
+            top: 1.7rem;
+        }
+        .footer-menu button img {
+            width: max-content;
+            margin: 0 auto;
+        }
+}

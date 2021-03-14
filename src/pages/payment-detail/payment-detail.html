@@ -1,0 +1,115 @@
+<!--
+  Generated template for the PaymentDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Payment Details</ion-title>
+    <button ion-button clear small color="warning" slot="end">
+      <ion-icon class="cart-btn" name="cart"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid no-padding>
+    <ion-row padding>
+      <ion-col col-12>
+        <div class="title_block">
+          <h4>Customize your payment method</h4>
+          <hr>
+        </div>
+      </ion-col>
+    </ion-row>
+    <hr>
+    <ion-row class="card-details">
+      <ion-col col-10>
+        <div>
+          <p no-padding no-margin><b>Cash/Card on delivery</b></p>
+        </div>
+      </ion-col>
+      <ion-col col-2 text-end>
+        <ion-icon name="checkmark" slot="end"></ion-icon>
+      </ion-col>
+      <ion-col col-12 margin-bottom margin-top><hr></ion-col>
+      <ion-col col-3><img src="assets/imgs/card-type.png" alt="Card Type"></ion-col>
+      <ion-col col-6>
+        <div class="card-number">
+          <span>****</span>
+          <span>****</span>
+          <span text-end>2687</span>
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <div class="btn-action">
+          <button ion-button clear small>
+            Delete Card
+          </button>
+        </div>
+      </ion-col>
+      <ion-col col-12 margin-top class="other-method"><hr>
+        <button no-padding ion-button clear small color="dark" style="font-size: 10px;" (click)="gotoSendorderCheckout()">
+          Other Methods
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row padding margin-top padding-top>
+      <ion-col>
+        <div class="b-add-card">
+          <button ion-button block item-start (click)="presentModal()">
+            <ion-icon name="add"></ion-icon> &nbsp; &nbsp;
+            Add another Credit/Debit Card
+          </button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer>
+  <ion-grid class="add-btn" no-padding>
+    <ion-row>
+      <ion-col col>
+        <div class="addbtn-bg">
+        <button class="home-btn" ion-button clear small text-center (click)="gotoProductSection()">
+          <img src="assets/imgs/home.svg" alt="Home"/>
+        </button>
+        </div>
+      </ion-col>
+      
+    </ion-row>
+  </ion-grid>
+    <ion-grid>
+    <ion-row>
+      <ion-col col-3>
+        <div class="footer-menu">
+          <button ion-button ion-button menuToggle clear small text-center>
+            <p class="menu-open"><span class="material-icons">menu_open</span>Menu</p>
+          </button>
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <div class="footer-menu" text-left>
+          <button ion-button clear small text-center (click)="gotoCheckOutpage()">
+            <p><span class="material-icons">shopping_cart</span>Cart</p>
+          </button>
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <div class="footer-menu" text-right>
+          <button ion-button clear small text-center (click)="gotoProfilepage()">
+            <p><span class="material-icons">person</span>Profile</p>
+          </button>
+        </div>
+      </ion-col>
+      <ion-col col-3>
+        <div class="footer-menu" text-right>
+          <button ion-button clear small text-center (click)="gotoMoremenupage()">
+            <p><span class="material-icons">format_indent_increase</span>More</p>
+          </button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

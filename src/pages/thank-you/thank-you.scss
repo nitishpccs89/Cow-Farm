@@ -1,0 +1,46 @@
+page-thank-you {
+    .modal_content {
+        background: #fff;
+        overflow: scroll;
+       top: 20%;
+       left: 0;
+       width: 100%;
+       height: 80%;
+       border-radius: 20px 20px 0 0;
+     }
+     button.closebtn {
+       float: right;
+       color: #4A4B4D;
+       top: .5rem;
+       right: .5rem;
+   }
+   ion-grid.add-remove-card {
+     padding: 0 2rem;
+   }
+   ion-grid.add-remove-card p{
+    font-family: 'metropolisregular';
+   }
+   
+ button.login_btn{
+     background-color: #EACA44;
+     color: #fff;
+     font-weight: 200;
+     font-size: 1.2em;
+     height: 50px;
+     box-shadow: none;
+     -webkit-box-shadow:none;
+     text-transform: none;
+   }
+   ion-grid.add-remove-card.grid img {
+    padding: 0 8rem;
+    }
+    .backto-home{
+        text-decoration: none;
+        text-transform: capitalize;
+        color: #4A4B4D;
+        text-align: center;
+    }
+   
+   
+
+}

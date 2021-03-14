@@ -1,0 +1,124 @@
+page-sendorder-checkout {
+    body{ font-family: 'metropolisregular' !important;}
+    /*header css*/
+    .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+
+        background-image:none!important;
+        background-repeat: repeat-x;
+        content: "";
+    }
+    .toolbar-background {
+        border-color: #b2b2b2;
+        background: #fff;
+    }
+    .toolbar-content {
+    display: flex;
+    flex-direction: row;
+    }
+    /*header css end*/
+    ion-content.sendorder-checkout {
+        background: #F6F6F6;
+    }
+    .checkout-grid {
+        background: #fff;
+    }
+    span.address {
+        color: #7C7D7E;
+        font-size: 12pt;
+    }
+    p.address {
+        color: #4A4B4D;
+        font-size: 13pt;
+        font-weight: 500;
+        margin: 0;
+    }
+    button.add-change.disable-hover.button.button-md.button-clear.button-clear-md.button-small.button-small-md.button-clear-md-danger {
+        color: #FC6011;
+        padding: 0;
+        text-transform: capitalize;
+        font-size: 13pt;
+    }
+    .radio-md-dark .radio-checked {
+        border-color: #FC6011;
+    }
+    .radio-md .radio-icon {
+        border-color: #FC6011;
+    }
+    .radio-md-dark .radio-inner {
+        background-color: #FC6011;
+    }
+    .item-md-light, .item-divider-md-light {
+        border: 1px solid #eaeaea;
+        border-radius: 5px;
+        height: 50px;
+    }
+    ion-item-group {
+    margin-bottom: 2rem;
+}
+  .pay-option ion-label img{
+      vertical-align: sub;
+  }
+  .add_more{
+    background: #EACA44;
+    text-transform: capitalize;
+    box-shadow: none;
+    height: 54px;
+    font-size: 16pt;
+    font-weight: 100;
+  }
+  button.add-change.button {
+    color: #FC6011;
+    padding-right: 0;
+}
+  // footer css
+  .footer-menu p{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      line-height: 1.5;
+      }
+      .footer-menu button {
+          color: #b6b7b7;
+          font-weight: normal;
+          font-size: 1rem;
+          padding: 2rem 0 4rem;
+          text-transform: capitalize;
+      }
+      .footer-menu p ion-icon {
+          font-size: 2.2rem;
+      }
+      ion-footer.footer {
+          background: #fff;
+      }
+
+      ion-grid.add-btn.grid {
+          z-index: 9999;
+          padding: 0;
+      }
+      .addbtn-bg {
+          background-image: url(../assets/imgs/footer-bgcheckout.png);
+          height: 100px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          position: absolute;
+          width: 100%;
+          top: -40px;
+          left: 0px;
+          text-align: center;
+      }
+      button.home-btn {
+          height: 58px;
+          margin: 0px;
+          z-index: 9999;
+          display: flex;
+          align-items: center;
+          margin: 0 auto;
+          position: relative;
+          top: 1.7rem;
+      }
+      .footer-menu button img {
+          width: max-content;
+          margin: 0 auto;
+      }
+}
